@@ -1,0 +1,85 @@
+{
+  "project_id": "p_belbesproj",
+  "tariff": "premium",
+  "created_at": "2026-05-12T19:30:00Z",
+  "client": {
+    "name": "Tim (BelBes Studio)",
+    "telegram": "@door2key",
+    "email": "hello@belbes.ru",
+    "company": "BelBes Studio",
+    "certifications": [],
+    "investors_awards": []
+  },
+  "business": {
+    "niche": "AI-driven digital studio",
+    "stage": "launching",
+    "target_audience": "Основатели стартапов и SMB-команды в РФ/СНГ, которым нужен сайт под ключ за 24-48 часов без compromise на качество. Внутренний целевой образ: тех-грамотный фаундер, который ценит прозрачность процесса и быструю доставку.",
+    "competitors_known": [
+      "https://framer.com",
+      "https://durable.co",
+      "https://10web.io",
+      "https://relume.io",
+      "https://uizard.io"
+    ],
+    "geographic_market": "RU"
+  },
+  "branding": {
+    "has_brand_book": false,
+    "brand_assets_url": null,
+    "logo_url": null,
+    "preferred_colors": ["#EB0000", "#F7F4EE", "#FAFAFA", "#1F1B17"],
+    "tone_keywords": [
+      "уверенный",
+      "спокойный",
+      "технически-прозрачный",
+      "editorial",
+      "без хайпа"
+    ],
+    "no_no_keywords": [
+      "хайп",
+      "революционный",
+      "AI-first",
+      "next-gen",
+      "disruptive",
+      "magical",
+      "smart"
+    ]
+  },
+  "content": {
+    "main_message": "Сайт под ключ за 24 часа на собственном AI-конвейере. Не шаблон. Конкретный сайт под ваш бизнес — с реальной копией, дизайном под нишу, и production-grade кодом.",
+    "key_offers": [
+      "Landing 30 000 RUB / 24 часа — одна страница, мобильная адаптация, deploy",
+      "Multipage 60 000 RUB / 36 часов — 3-5 страниц, формы, аналитика",
+      "Premium 100 000 RUB / 48 часов — 5+ страниц, отдельный мобайл-флоу, кастомные анимации, копирайт с глубиной"
+    ],
+    "cta_goal": "request_demo",
+    "required_sections": [
+      "hero",
+      "что мы делаем (3 тарифа объяснены простыми словами)",
+      "как работает AI-конвейер (5 фаз — Brief → Research → Synthesizer → Stagehand → Downstream)",
+      "case studies (3-4 примера деливери, метрики и timeline)",
+      "тарифы (детальный pricing + что входит + сроки)",
+      "команда (TB + Виктор + AI-конвейер как третий сотрудник)",
+      "контакты (TG, email, форма заказа)"
+    ]
+  },
+  "deployment": {
+    "domain": "belbes.studio",
+    "hosting_preference": "timeweb",
+    "needs_152fz": false
+  },
+  "deadlines": {
+    "expected_delivery": "2026-05-14",
+    "client_availability": "GMT+3, dialog в TG в течение дня"
+  },
+  "media_strategy": {
+    "video_treatment": "css_animation_fallback",
+    "video_treatment_rationale": "Operator request V6.11.3: video roles в дизайне сохраняются как placeholders, downstream merge-media с --css-animation-fallback переводит __VIDEO_<role>__ в @keyframes + <div class='anim-<role>'>. Причина: ambient motion — intent дизайна, full video gen — overkill для этого тарифа + accessibility-friendlier через prefers-reduced-motion. Минимум 2 video roles (hero ambient + decorative section transition).",
+    "min_video_roles": 2,
+    "image_treatment": "openai_gpt_image"
+  },
+  "_meta": {
+    "intake_path": "mock_dialog_via_session",
+    "intake_note": "TG MCP intake rejected при первой попытке — operator approved mock с тем же content что в живом дилоге дал бы. Brief.json schema matches briefing-bot Layer 1-4 output contract."
+  }
+}
