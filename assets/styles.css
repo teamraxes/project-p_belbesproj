@@ -1099,3 +1099,8 @@ a:hover .bb-arr { transform: translateX(3px); }
   background: var(--bb-ink); color: var(--bb-cream);
   padding: 8px 12px; text-decoration: none;
 }
+
+
+/* @v6.11.3-img-fallback */
+.bb-photo-editorial,.bb-photo-case{position:relative;overflow:hidden;}
+.bb-photo-img{border-radius:inherit;}
